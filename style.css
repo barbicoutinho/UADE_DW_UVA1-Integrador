@@ -9,7 +9,7 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #FF8C42; /* Naranja suave */
+    background-color: #FFA500; /* Naranja más suave cercano al amarillo */
     padding: 10px 0;
 }
 
@@ -113,7 +113,7 @@ form button:hover {
 
 /* Pie de página */
 footer {
-    background-color: #FF8C42; /* Naranja suave */
+    background-color: #FFA500; /* Naranja más suave cercano al amarillo */
     color: white;
     text-align: center;
     padding: 10px;
@@ -129,5 +129,6 @@ footer p {
 /* Efectos de hover en enlaces */
 a:hover {
     text-decoration: underline;
-    color: #FF8C42;
-}
+    color: #FFA500;
+} 
+
