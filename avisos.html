@@ -1,56 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Avisos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      background-color: #FFF5E1;
-      color: #2F2F2F;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px #ccc;
-    }
-    nav a {
-      margin-right: 10px;
-      text-decoration: none;
-      color: #0077cc;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avisos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="avisos.html">Avisos</a> |
-      <a href="sobremi.html">Sobre mí</a> |
-      <a href="materias2025.html">Materias 2025</a> |
-      <a href="contacto.html">Contacto</a>
-    </nav>
-    <h1>Avisos y Tareas</h1>
-    <h2>Diseño y Desarrollo Web</h2>
-    <ul>
-      <li>Leer capítulo 3</li>
-      <li>Entregar UVA 1 y 2.</li>
-    </ul>
-    <h2>Marketing.</h2>
-    <ul>
-      <li>Leer los primeros 5 capítulos.</li>
-      <li>Resolver ejercicios del práctico 2</li>
-    </ul>
-    <h2>Arquitectura de ordenadores.</h2>
-    <ul>
-      <li>Estudiar programación básica con Python.</li>
-      <li>Entregar TP1.</li>
-    </ul>
-  </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="avisos.html">Avisos</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="materias2025.html">Materias 2025</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Avisos y Tareas Pendientes</h1>
+            <ul>
+                <li><input type="checkbox" id="tarea1"> Entregar Proyecto de Desarrollo Web - <strong>Fecha: 05/05</strong></li>
+                <li><input type="checkbox" id="tarea2"> Estudiar para examen de Base de Datos - <strong>Fecha: 12/05</strong></li>
+                <li><input type="checkbox" id="tarea3"> Revisión de ejercicios Matemática - <strong>Fecha: 14/05</strong></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bárbara Coutinho. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
