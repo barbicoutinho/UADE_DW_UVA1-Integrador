@@ -1,68 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Contacto</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      background-color: #FFF5E1;
-      color: #2F2F2F;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px #ccc;
-    }
-    nav a {
-      margin-right: 10px;
-      text-decoration: none;
-      color: #0077cc;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #aaa;
-      border-radius: 5px;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #0077cc;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="avisos.html">Avisos</a> |
-      <a href="sobremi.html">Sobre mí</a> |
-      <a href="materias2025.html">Materias 2025</a> |
-      <a href="contacto.html">Contacto</a>
-    </nav>
-    <h1>Formulario de Contacto</h1>
-    <form>
-      <label>Nombre:
-        <input type="text" name="nombre">
-      </label>
-      <label>Email:
-        <input type="email" name="email">
-      </label>
-      <label>Mensaje:
-        <textarea name="mensaje" rows="5"></textarea>
-      </label>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="avisos.html">Avisos</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="materias2025.html">Materias 2025</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contacto</h1>
+            <form action="enviar.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bárbara Coutinho. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
